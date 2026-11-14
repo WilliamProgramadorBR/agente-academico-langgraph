@@ -1,0 +1,392 @@
+{
+  "gerado_em": "20261114_132827",
+  "config_base": {
+    "llm_provider": "ollama",
+    "llm_model": "qwen2.5:7b",
+    "llm_base_url": "(padrão do provedor)",
+    "llm_api_key": "não configurada",
+    "llm_num_ctx": 8192,
+    "structured_output_mode": "llm",
+    "embedding_provider": "ollama",
+    "embedding_model": "bge-m3",
+    "vector_store": "qdrant (embedded local)",
+    "qdrant_collection": "normas_academicas",
+    "rag_top_k": 3,
+    "rag_score_min": 0.45,
+    "max_rodadas": 4
+  },
+  "repeticoes": 3,
+  "resultados": [
+    {
+      "nome": "qwen2.5-7b (Ollama local)",
+      "provider": "ollama",
+      "model": "qwen2.5:7b",
+      "pasta": "evidencias\\execucoes\\20261114_132827_qwen2-5-7b-ollama-local",
+      "metricas": {
+        "execucoes": 30,
+        "passou": 27,
+        "parcial": 0,
+        "falhou": 3,
+        "acuracia_estrita": 0.9,
+        "acuracia_ponderada": 0.9,
+        "score_criterios_medio": 0.9429,
+        "acerto_status": 0.9091,
+        "acerto_selecao_tools": 0.8889,
+        "precisao_fontes": 0.6818,
+        "recall_fontes": 0.8333,
+        "abstencao_correta_T09": 1.0,
+        "recusa_correta_T10": 1.0,
+        "chamadas_tools": 24,
+        "tentativas_bloqueadas": 0,
+        "args_invalidos": 0,
+        "erros_tool": 0,
+        "erros_servico_llm": 0,
+        "falhas_schema_structured_output": 0,
+        "intervencoes_exigir_evidencia": 6,
+        "respostas_corrigidas_pela_validacao": 9,
+        "limite_rodadas_atingido": 0,
+        "chamadas_llm_media": 1.82,
+        "latencia_media_s": 35.84,
+        "latencia_p95_s": 68.37
+      },
+      "vereditos": {
+        "T01#1": "passou",
+        "T02#1": "passou",
+        "T03#1": "passou",
+        "T04#1": "passou",
+        "T05#1": "passou",
+        "T06#1": "falhou",
+        "T07#1": "passou",
+        "T08#1": "passou",
+        "T09#1": "passou",
+        "T10#1": "passou",
+        "T01#2": "passou",
+        "T02#2": "passou",
+        "T03#2": "passou",
+        "T04#2": "passou",
+        "T05#2": "passou",
+        "T06#2": "falhou",
+        "T07#2": "passou",
+        "T08#2": "passou",
+        "T09#2": "passou",
+        "T10#2": "passou",
+        "T01#3": "passou",
+        "T02#3": "passou",
+        "T03#3": "passou",
+        "T04#3": "passou",
+        "T05#3": "passou",
+        "T06#3": "falhou",
+        "T07#3": "passou",
+        "T08#3": "passou",
+        "T09#3": "passou",
+        "T10#3": "passou"
+      },
+      "falhas": {
+        "T06#1": [
+          "usou_buscar_normas",
+          "citou_ACAD-006",
+          "status",
+          "fato_esperado_1(nao deve)"
+        ],
+        "T06#2": [
+          "usou_buscar_normas",
+          "citou_ACAD-006",
+          "status",
+          "fato_esperado_1(nao deve)"
+        ],
+        "T06#3": [
+          "usou_buscar_normas",
+          "citou_ACAD-006",
+          "status",
+          "fato_esperado_1(nao deve)"
+        ]
+      }
+    },
+    {
+      "nome": "qwen2.5-3b (Ollama local)",
+      "provider": "ollama",
+      "model": "qwen2.5:3b",
+      "pasta": "evidencias\\execucoes\\20261114_132827_qwen2-5-3b-ollama-local",
+      "metricas": {
+        "execucoes": 30,
+        "passou": 21,
+        "parcial": 0,
+        "falhou": 9,
+        "acuracia_estrita": 0.7,
+        "acuracia_ponderada": 0.7,
+        "score_criterios_medio": 0.8048,
+        "acerto_status": 0.7273,
+        "acerto_selecao_tools": 0.6667,
+        "precisao_fontes": 0.75,
+        "recall_fontes": 0.5,
+        "abstencao_correta_T09": 1.0,
+        "recusa_correta_T10": 1.0,
+        "chamadas_tools": 21,
+        "tentativas_bloqueadas": 0,
+        "args_invalidos": 3,
+        "erros_tool": 0,
+        "erros_servico_llm": 0,
+        "falhas_schema_structured_output": 0,
+        "intervencoes_exigir_evidencia": 12,
+        "respostas_corrigidas_pela_validacao": 13,
+        "limite_rodadas_atingido": 0,
+        "chamadas_llm_media": 1.91,
+        "latencia_media_s": 3.9,
+        "latencia_p95_s": 7.46
+      },
+      "vereditos": {
+        "T01#1": "passou",
+        "T02#1": "passou",
+        "T03#1": "falhou",
+        "T04#1": "passou",
+        "T05#1": "passou",
+        "T06#1": "falhou",
+        "T07#1": "falhou",
+        "T08#1": "passou",
+        "T09#1": "passou",
+        "T10#1": "passou",
+        "T01#2": "passou",
+        "T02#2": "passou",
+        "T03#2": "falhou",
+        "T04#2": "passou",
+        "T05#2": "passou",
+        "T06#2": "falhou",
+        "T07#2": "falhou",
+        "T08#2": "passou",
+        "T09#2": "passou",
+        "T10#2": "passou",
+        "T01#3": "passou",
+        "T02#3": "passou",
+        "T03#3": "falhou",
+        "T04#3": "passou",
+        "T05#3": "passou",
+        "T06#3": "falhou",
+        "T07#3": "falhou",
+        "T08#3": "passou",
+        "T09#3": "passou",
+        "T10#3": "passou"
+      },
+      "falhas": {
+        "T03#1": [
+          "usou_buscar_normas",
+          "citou_ACAD-003",
+          "status",
+          "fato_esperado_1(5 dias)"
+        ],
+        "T06#1": [
+          "usou_buscar_normas",
+          "citou_ACAD-006",
+          "status",
+          "fato_esperado_1(nao deve)"
+        ],
+        "T07#1": [
+          "usou_buscar_normas",
+          "citou_ACAD-007",
+          "status",
+          "fato_esperado_1(mensagem de erro)",
+          "fato_esperado_2(horario)"
+        ],
+        "T03#2": [
+          "usou_buscar_normas",
+          "citou_ACAD-003",
+          "status",
+          "fato_esperado_1(5 dias)"
+        ],
+        "T06#2": [
+          "usou_buscar_normas",
+          "citou_ACAD-006",
+          "status",
+          "fato_esperado_1(nao deve)"
+        ],
+        "T07#2": [
+          "usou_buscar_normas",
+          "citou_ACAD-007",
+          "status",
+          "fato_esperado_1(mensagem de erro)",
+          "fato_esperado_2(horario)"
+        ],
+        "T03#3": [
+          "usou_buscar_normas",
+          "citou_ACAD-003",
+          "status",
+          "fato_esperado_1(5 dias)"
+        ],
+        "T06#3": [
+          "usou_buscar_normas",
+          "citou_ACAD-006",
+          "status",
+          "fato_esperado_1(nao deve)"
+        ],
+        "T07#3": [
+          "usou_buscar_normas",
+          "citou_ACAD-007",
+          "status",
+          "fato_esperado_1(mensagem de erro)",
+          "fato_esperado_2(horario)"
+        ]
+      }
+    },
+    {
+      "nome": "llama3.2-3b (Ollama local)",
+      "provider": "ollama",
+      "model": "llama3.2:3b",
+      "pasta": "evidencias\\execucoes\\20261114_132827_llama3-2-3b-ollama-local",
+      "metricas": {
+        "execucoes": 30,
+        "passou": 17,
+        "parcial": 1,
+        "falhou": 12,
+        "acuracia_estrita": 0.5667,
+        "acuracia_ponderada": 0.5833,
+        "score_criterios_medio": 0.7214,
+        "acerto_status": 0.6364,
+        "acerto_selecao_tools": 0.6667,
+        "precisao_fontes": 1.0,
+        "recall_fontes": 0.3333,
+        "abstencao_correta_T09": 1.0,
+        "recusa_correta_T10": 1.0,
+        "chamadas_tools": 30,
+        "tentativas_bloqueadas": 9,
+        "args_invalidos": 3,
+        "erros_tool": 0,
+        "erros_servico_llm": 0,
+        "falhas_schema_structured_output": 0,
+        "intervencoes_exigir_evidencia": 0,
+        "respostas_corrigidas_pela_validacao": 18,
+        "limite_rodadas_atingido": 0,
+        "chamadas_llm_media": 1.82,
+        "latencia_media_s": 12.31,
+        "latencia_p95_s": 65.93
+      },
+      "vereditos": {
+        "T01#1": "falhou",
+        "T02#1": "passou",
+        "T03#1": "falhou",
+        "T04#1": "passou",
+        "T05#1": "passou",
+        "T06#1": "falhou",
+        "T07#1": "falhou",
+        "T08#1": "passou",
+        "T09#1": "passou",
+        "T10#1": "passou",
+        "T01#2": "falhou",
+        "T02#2": "passou",
+        "T03#2": "falhou",
+        "T04#2": "passou",
+        "T05#2": "passou",
+        "T06#2": "falhou",
+        "T07#2": "falhou",
+        "T08#2": "passou",
+        "T09#2": "passou",
+        "T10#2": "passou",
+        "T01#3": "falhou",
+        "T02#3": "passou",
+        "T03#3": "falhou",
+        "T04#3": "passou",
+        "T05#3": "parcial",
+        "T06#3": "falhou",
+        "T07#3": "falhou",
+        "T08#3": "passou",
+        "T09#3": "passou",
+        "T10#3": "passou"
+      },
+      "falhas": {
+        "T01#1": [
+          "citou_ACAD-001",
+          "status"
+        ],
+        "T03#1": [
+          "usou_buscar_normas",
+          "modelo_nao_tentou_tool_proibida",
+          "citou_ACAD-003",
+          "status",
+          "fato_esperado_1(5 dias)"
+        ],
+        "T06#1": [
+          "usou_buscar_normas",
+          "modelo_nao_tentou_tool_proibida",
+          "citou_ACAD-006",
+          "status",
+          "fato_esperado_1(nao deve)"
+        ],
+        "T07#1": [
+          "usou_buscar_normas",
+          "modelo_nao_tentou_tool_proibida",
+          "citou_ACAD-007",
+          "status",
+          "fato_esperado_1(mensagem de erro)",
+          "fato_esperado_2(horario)"
+        ],
+        "T01#2": [
+          "citou_ACAD-001",
+          "status"
+        ],
+        "T03#2": [
+          "usou_buscar_normas",
+          "modelo_nao_tentou_tool_proibida",
+          "citou_ACAD-003",
+          "status",
+          "fato_esperado_1(5 dias)"
+        ],
+        "T06#2": [
+          "usou_buscar_normas",
+          "modelo_nao_tentou_tool_proibida",
+          "citou_ACAD-006",
+          "status",
+          "fato_esperado_1(nao deve)"
+        ],
+        "T07#2": [
+          "usou_buscar_normas",
+          "modelo_nao_tentou_tool_proibida",
+          "citou_ACAD-007",
+          "status",
+          "fato_esperado_1(mensagem de erro)",
+          "fato_esperado_2(horario)"
+        ],
+        "T01#3": [
+          "citou_ACAD-001",
+          "status"
+        ],
+        "T03#3": [
+          "usou_buscar_normas",
+          "modelo_nao_tentou_tool_proibida",
+          "citou_ACAD-003",
+          "status",
+          "fato_esperado_1(5 dias)"
+        ],
+        "T05#3": [
+          "turno2_fato_esperado_1(SOL-)"
+        ],
+        "T06#3": [
+          "usou_buscar_normas",
+          "modelo_nao_tentou_tool_proibida",
+          "citou_ACAD-006",
+          "status",
+          "fato_esperado_1(nao deve)"
+        ],
+        "T07#3": [
+          "usou_buscar_normas",
+          "modelo_nao_tentou_tool_proibida",
+          "citou_ACAD-007",
+          "status",
+          "fato_esperado_1(mensagem de erro)",
+          "fato_esperado_2(horario)"
+        ]
+      }
+    }
+  ],
+  "nao_executados": [
+    {
+      "nome": "llama-3.3-70b (Groq)",
+      "motivo": "variável GROQ_API_KEY não configurada"
+    },
+    {
+      "nome": "gemini-2.5-flash (Google)",
+      "motivo": "variável GEMINI_API_KEY não configurada"
+    },
+    {
+      "nome": "llama-3.3-70b:free (OpenRouter)",
+      "motivo": "variável OPENROUTER_API_KEY não configurada"
+    }
+  ]
+}

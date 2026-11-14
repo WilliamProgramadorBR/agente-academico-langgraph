@@ -1,0 +1,15 @@
+# Núcleo
+langchain-core==1.8.0
+langgraph==1.2.22
+pydantic==2.14.3
+python-dotenv==1.2.4
+# Vector store e embeddings locais
+qdrant-client==1.20.0
+fastembed==0.9.1
+# Provedores de LLM (instale todos; o .env escolhe qual usar)
+langchain-ollama==1.1.0
+langchain-groq==1.1.3
+langchain-google-genai==4.5.0
+langchain-openai==1.8.0
+# Testes
+pytest==9.2.0

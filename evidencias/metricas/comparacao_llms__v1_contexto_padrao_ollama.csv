@@ -1,0 +1,4 @@
+﻿modelo;acuracia_estrita;acuracia_ponderada;score_criterios_medio;passou;parcial;falhou;acerto_status;acerto_selecao_tools;precisao_fontes;recall_fontes;abstencao_correta_T09;recusa_correta_T10;chamadas_tools;tentativas_bloqueadas;args_invalidos;erros_tool;erros_servico_llm;falhas_schema_structured_output;intervencoes_exigir_evidencia;respostas_corrigidas_pela_validacao;limite_rodadas_atingido;chamadas_llm_media;latencia_media_s;latencia_p95_s
+qwen2.5-7b (Ollama local);0.9;0.9;0.9429;27;0;3;0.9091;0.8889;0.6818;0.8333;1.0;1.0;26;0;2;0;0;0;6;9;0;1.88;39.05;75.71
+qwen2.5-3b (Ollama local);0.7;0.7;0.8048;21;0;9;0.7273;0.6667;0.75;0.5;1.0;1.0;21;0;3;0;0;0;12;12;0;1.91;3.93;7.47
+llama3.2-3b (Ollama local);0.6;0.6;0.7262;18;0;12;0.6364;0.6667;1.0;0.3333;1.0;1.0;30;9;3;0;1;0;0;21;0;1.82;38.13;71.55

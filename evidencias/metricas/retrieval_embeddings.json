@@ -1,0 +1,576 @@
+{
+  "gerado_em": "2026-11-14T12:04:28",
+  "top_k": 3,
+  "resultados": [
+    {
+      "nome": "MiniLM-L12 multilingue (fastembed)",
+      "provider": "fastembed",
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "hit@1": 0.8571,
+      "hit@3": 1.0,
+      "mrr": 0.9048,
+      "score_medio_relevante": 0.6241,
+      "menor_score_relevante": 0.3376,
+      "maior_score_negativo_T09": 0.343,
+      "margem_separacao": -0.0054,
+      "limiar_sugerido": null,
+      "indexacao_s": 1.38,
+      "busca_media_ms": 6.4,
+      "detalhes": [
+        {
+          "caso": "T01",
+          "relevantes": [
+            "ACAD-001"
+          ],
+          "ranking": [
+            [
+              "ACAD-001",
+              0.7236
+            ],
+            [
+              "ACAD-005",
+              0.4392
+            ],
+            [
+              "ACAD-002",
+              0.4071
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T02",
+          "relevantes": [
+            "ACAD-002"
+          ],
+          "ranking": [
+            [
+              "ACAD-002",
+              0.7035
+            ],
+            [
+              "ACAD-005",
+              0.4701
+            ],
+            [
+              "ACAD-001",
+              0.4551
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T03",
+          "relevantes": [
+            "ACAD-003"
+          ],
+          "ranking": [
+            [
+              "ACAD-003",
+              0.676
+            ],
+            [
+              "ACAD-001",
+              0.3701
+            ],
+            [
+              "ACAD-008",
+              0.3252
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T05",
+          "relevantes": [
+            "ACAD-005"
+          ],
+          "ranking": [
+            [
+              "ACAD-005",
+              0.7692
+            ],
+            [
+              "ACAD-001",
+              0.5434
+            ],
+            [
+              "ACAD-002",
+              0.4954
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T06",
+          "relevantes": [
+            "ACAD-006"
+          ],
+          "ranking": [
+            [
+              "ACAD-006",
+              0.5506
+            ],
+            [
+              "ACAD-011",
+              0.4861
+            ],
+            [
+              "ACAD-009",
+              0.4783
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T07",
+          "relevantes": [
+            "ACAD-007"
+          ],
+          "ranking": [
+            [
+              "ACAD-007",
+              0.6084
+            ],
+            [
+              "ACAD-001",
+              0.2536
+            ],
+            [
+              "ACAD-012",
+              0.2365
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T08",
+          "relevantes": [
+            "ACAD-008"
+          ],
+          "ranking": [
+            [
+              "ACAD-005",
+              0.3494
+            ],
+            [
+              "ACAD-006",
+              0.3383
+            ],
+            [
+              "ACAD-008",
+              0.3376
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 3
+        },
+        {
+          "caso": "T09",
+          "relevantes": [],
+          "ranking": [
+            [
+              "ACAD-001",
+              0.343
+            ],
+            [
+              "ACAD-003",
+              0.3389
+            ],
+            [
+              "ACAD-005",
+              0.3023
+            ]
+          ],
+          "tipo": "negativo (sem resposta na base)"
+        }
+      ]
+    },
+    {
+      "nome": "nomic-embed-text (Ollama)",
+      "provider": "ollama",
+      "model": "nomic-embed-text",
+      "hit@1": 0.7143,
+      "hit@3": 1.0,
+      "mrr": 0.8571,
+      "score_medio_relevante": 0.7891,
+      "menor_score_relevante": 0.6624,
+      "maior_score_negativo_T09": 0.6299,
+      "margem_separacao": 0.0325,
+      "limiar_sugerido": 0.646,
+      "indexacao_s": 5.46,
+      "busca_media_ms": 20.6,
+      "detalhes": [
+        {
+          "caso": "T01",
+          "relevantes": [
+            "ACAD-001"
+          ],
+          "ranking": [
+            [
+              "ACAD-001",
+              0.8487
+            ],
+            [
+              "ACAD-002",
+              0.7263
+            ],
+            [
+              "ACAD-005",
+              0.7138
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T02",
+          "relevantes": [
+            "ACAD-002"
+          ],
+          "ranking": [
+            [
+              "ACAD-002",
+              0.8866
+            ],
+            [
+              "ACAD-005",
+              0.6685
+            ],
+            [
+              "ACAD-001",
+              0.6316
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T03",
+          "relevantes": [
+            "ACAD-003"
+          ],
+          "ranking": [
+            [
+              "ACAD-003",
+              0.7967
+            ],
+            [
+              "ACAD-011",
+              0.65
+            ],
+            [
+              "ACAD-001",
+              0.6217
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T05",
+          "relevantes": [
+            "ACAD-005"
+          ],
+          "ranking": [
+            [
+              "ACAD-005",
+              0.8163
+            ],
+            [
+              "ACAD-001",
+              0.6776
+            ],
+            [
+              "ACAD-002",
+              0.6634
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T06",
+          "relevantes": [
+            "ACAD-006"
+          ],
+          "ranking": [
+            [
+              "ACAD-011",
+              0.7046
+            ],
+            [
+              "ACAD-006",
+              0.6994
+            ],
+            [
+              "ACAD-001",
+              0.679
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 2
+        },
+        {
+          "caso": "T07",
+          "relevantes": [
+            "ACAD-007"
+          ],
+          "ranking": [
+            [
+              "ACAD-007",
+              0.8136
+            ],
+            [
+              "ACAD-009",
+              0.6737
+            ],
+            [
+              "ACAD-006",
+              0.6604
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T08",
+          "relevantes": [
+            "ACAD-008"
+          ],
+          "ranking": [
+            [
+              "ACAD-001",
+              0.7153
+            ],
+            [
+              "ACAD-008",
+              0.6624
+            ],
+            [
+              "ACAD-002",
+              0.6289
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 2
+        },
+        {
+          "caso": "T09",
+          "relevantes": [],
+          "ranking": [
+            [
+              "ACAD-010",
+              0.6299
+            ],
+            [
+              "ACAD-007",
+              0.6082
+            ],
+            [
+              "ACAD-003",
+              0.6066
+            ]
+          ],
+          "tipo": "negativo (sem resposta na base)"
+        }
+      ]
+    },
+    {
+      "nome": "bge-m3 (Ollama)",
+      "provider": "ollama",
+      "model": "bge-m3",
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "mrr": 1.0,
+      "score_medio_relevante": 0.6947,
+      "menor_score_relevante": 0.5836,
+      "maior_score_negativo_T09": 0.2886,
+      "margem_separacao": 0.295,
+      "limiar_sugerido": 0.436,
+      "indexacao_s": 8.37,
+      "busca_media_ms": 45.0,
+      "detalhes": [
+        {
+          "caso": "T01",
+          "relevantes": [
+            "ACAD-001"
+          ],
+          "ranking": [
+            [
+              "ACAD-001",
+              0.7473
+            ],
+            [
+              "ACAD-005",
+              0.4725
+            ],
+            [
+              "ACAD-004",
+              0.4442
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T02",
+          "relevantes": [
+            "ACAD-002"
+          ],
+          "ranking": [
+            [
+              "ACAD-002",
+              0.6856
+            ],
+            [
+              "ACAD-005",
+              0.4851
+            ],
+            [
+              "ACAD-010",
+              0.4165
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T03",
+          "relevantes": [
+            "ACAD-003"
+          ],
+          "ranking": [
+            [
+              "ACAD-003",
+              0.7397
+            ],
+            [
+              "ACAD-005",
+              0.5603
+            ],
+            [
+              "ACAD-008",
+              0.5397
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T05",
+          "relevantes": [
+            "ACAD-005"
+          ],
+          "ranking": [
+            [
+              "ACAD-005",
+              0.738
+            ],
+            [
+              "ACAD-002",
+              0.5663
+            ],
+            [
+              "ACAD-010",
+              0.5558
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T06",
+          "relevantes": [
+            "ACAD-006"
+          ],
+          "ranking": [
+            [
+              "ACAD-006",
+              0.6381
+            ],
+            [
+              "ACAD-007",
+              0.5162
+            ],
+            [
+              "ACAD-010",
+              0.4939
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T07",
+          "relevantes": [
+            "ACAD-007"
+          ],
+          "ranking": [
+            [
+              "ACAD-007",
+              0.7303
+            ],
+            [
+              "ACAD-010",
+              0.4855
+            ],
+            [
+              "ACAD-006",
+              0.444
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T08",
+          "relevantes": [
+            "ACAD-008"
+          ],
+          "ranking": [
+            [
+              "ACAD-008",
+              0.5836
+            ],
+            [
+              "ACAD-001",
+              0.5164
+            ],
+            [
+              "ACAD-002",
+              0.3982
+            ]
+          ],
+          "tipo": "positivo",
+          "posicao_relevante": 1
+        },
+        {
+          "caso": "T09",
+          "relevantes": [],
+          "ranking": [
+            [
+              "ACAD-003",
+              0.2886
+            ],
+            [
+              "ACAD-002",
+              0.2879
+            ],
+            [
+              "ACAD-005",
+              0.2724
+            ]
+          ],
+          "tipo": "negativo (sem resposta na base)"
+        }
+      ]
+    }
+  ]
+}

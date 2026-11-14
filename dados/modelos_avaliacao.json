@@ -1,0 +1,16 @@
+{
+  "_descricao": "Modelos comparados por `python -m agente.comparar_modelos` (LLMs) e `python -m agente.avaliar_retrieval` (embeddings). Entradas com `api_key_env` só rodam se a variável existir no .env; caso contrário aparecem no relatório como 'não executado'. Adicione/remova modelos livremente.",
+  "llms": [
+    {"nome": "qwen2.5-7b (Ollama local)", "provider": "ollama", "model": "qwen2.5:7b"},
+    {"nome": "qwen2.5-3b (Ollama local)", "provider": "ollama", "model": "qwen2.5:3b"},
+    {"nome": "llama3.2-3b (Ollama local)", "provider": "ollama", "model": "llama3.2:3b"},
+    {"nome": "llama-3.3-70b (Groq)", "provider": "groq", "model": "llama-3.3-70b-versatile", "api_key_env": "GROQ_API_KEY"},
+    {"nome": "gemini-2.5-flash (Google)", "provider": "gemini", "model": "gemini-2.5-flash", "api_key_env": "GEMINI_API_KEY"},
+    {"nome": "llama-3.3-70b:free (OpenRouter)", "provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct:free", "api_key_env": "OPENROUTER_API_KEY"}
+  ],
+  "embeddings": [
+    {"nome": "MiniLM-L12 multilingue (fastembed)", "provider": "fastembed", "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"},
+    {"nome": "nomic-embed-text (Ollama)", "provider": "ollama", "model": "nomic-embed-text"},
+    {"nome": "bge-m3 (Ollama)", "provider": "ollama", "model": "bge-m3"}
+  ]
+}
